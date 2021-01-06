@@ -25,7 +25,7 @@ const config = {
     youtube: 'eror',
     whatsapp: 'eror',
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
-    waktu: time
+    waktu: 'moment().format("HH:mm");
 }
 
 const { A187, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
