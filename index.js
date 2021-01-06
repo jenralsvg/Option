@@ -23,7 +23,7 @@ const config = {
     nomer: 'wa.me/+6285757196481',
     aktif: 'Tergantung owner',
     youtube: 'eror',
-    whatsapp: 'eror',
+    whatsapp: 'https://chat.whatsapp.com/GTJLvOMQmL01dFj7F8Ie8q',
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
 }
 
