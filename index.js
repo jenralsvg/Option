@@ -19,8 +19,8 @@ const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
     A187: 'JRL Svg',
-    instagram: 'https://instagram.com/sensi.edtz_',
-    nomer: 'wa.me/+6285964224017',
+    instagram: 'eror',
+    nomer: 'wa.me/+6285757196481',
     aktif: Tergantung owner',
     youtube: 'eror',
     whatsapp: 'eror',
