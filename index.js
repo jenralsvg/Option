@@ -1,11 +1,11 @@
 /*
 * JANGAN UBAH-UBAH INFO!!!
 * "JANGAN MODAL NAMA DOANG BRO!!!"
-* SCRIPT BY FADHIL ID
+* SCRIPT BY Kata Ilham
 * JANGAN MODAL NAMA DOANG BOSQ
 * HARGAILAH YG MEMBUAT SCRIPT INI BOSQ
 * JANGAN UBAH-UBAH INFO!!!
-* FADHIL ID
+* Kata Ilham
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
 const qrcode = require("qrcode-terminal")
@@ -21,7 +21,7 @@ const config = {
     A187: 'JRL Svg',
     instagram: 'eror',
     nomer: 'wa.me/+6285757196481',
-    aktif: Tergantung owner',
+    aktif: 'Tergantung owner',
     youtube: 'eror',
     whatsapp: 'eror',
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
