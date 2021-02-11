@@ -19,7 +19,6 @@ const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
     ILHAM: 'JRL Svg',
-    nomer: 'wa.me/+6285757196481',
     aktif: 'Tergantung owner',
     whatsapp: 'https://chat.whatsapp.com/GTJLvOMQmL01dFj7F8Ie8q',
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
@@ -106,7 +105,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code by Mohamad Ilham, Scan kode qr mu cok!`)
+   console.log(`[ ${time} ] QR code by FADHIL & MYBOT, Scan kode qr mu cok!`)
 })
 
 client.on('credentials-updated', () => {
@@ -165,7 +164,7 @@ client.on('message-new', async (m) => {
        case 'nulis':
            nulis(value)
                .then(data => {
-                   client.sendMessage(id, '[ WAIT ] Sedang Proses...⏳', MessageType.text)
+                   client.sendMessage(id, '[❗] Sedang Proses...⏳', MessageType.text)
                    client.sendMessage(id, data, MessageType.image)
                })
                .catch(err => {
@@ -357,7 +356,7 @@ client.on('message-new', async (m) => {
            lirik(value)
                .then(data => {
                    const { hasil: lirik } = data
-                   let hasil = `lirik lagu *${value}* \n\n${lirik}`
+                   let hasil = `📍lirik lagu📍 *${value}* \n\n\n${lirik}`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -700,7 +699,7 @@ case 'filmanime':
            case 'ssweb':
            ssweb()
                .then(buffer => {
-                   client.sendMessage(id, '[WAIT] Sedang Proses...⏳', MessageType.text)
+                   client.sendMessage(id, '[❗] Sedang Proses...⏳', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -710,7 +709,7 @@ case 'filmanime':
      case 'cooltext':
            cooltext()
                .then(buffer => {
-                   client.sendMessage(id, '[WAIT] Sedang Proses...⏳', MessageType.text)
+                   client.sendMessage(id, '[❗] Sedang Proses...⏳', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -720,7 +719,6 @@ case 'filmanime':
            case 'ttp':
            ttp()
                .then(buffer => {
-                   client.sendMessage(id, '[WAIT] Sedang Proses...⏳', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -730,7 +728,7 @@ case 'filmanime':
            case 'nekonime':
            nekonime()
                .then(buffer => {
-                   client.sendMessage(id, '[WAIT] Sedang Proses...⏳', MessageType.text)
+                   client.sendMessage(id, '[❗] Sedang Proses...⏳', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -748,10 +746,10 @@ case 'filmanime':
                })
            break
           case 'creator':
-            client.sendContact(from, '6283102650464@c.us')
+            client.sendContact(from, '6285757196481@c.us')
             break
       case 'tts':
-            if (args.length === 1) return client.reply(from, 'Kirim perintah *!tts [id, en, jp, ar] [teks]*, contoh *!tts id halo semua*')
+            if (args.length === 1) return client.reply(from, 'Kirim perintah *#tts [id, en, jp, ar] [teks]*, contoh *#tts id halo semua*')
             const ttsId = require('node-gtts')('id')
             const ttsEn = require('node-gtts')('en')
 	    const ttsJp = require('node-gtts')('ja')
