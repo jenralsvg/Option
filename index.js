@@ -18,14 +18,14 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    ilham: 'JRL Svg',
+    Ilham: 'JRL Svg',
     nomer: 'wa.me/+6285757196481',
     aktif: 'Tergantung owner',
     whatsapp: 'https://chat.whatsapp.com/GTJLvOMQmL01dFj7F8Ie8q',
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
 }
 
-const { ilham, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
+const { Ilham, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
 
 const
 {
