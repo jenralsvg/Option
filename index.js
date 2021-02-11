@@ -145,22 +145,22 @@ client.on('message-new', async (m) => {
 
    switch (prefix) {
        case 'help':
-           client.sendMessage(id, help.help(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, help.help(id, ILHAM, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break
        case 'menu1':
-           client.sendMessage(id, menu1.menu1(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, menu1.menu1(id, ILHAM, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break
        case 'menu2':
-           client.sendMessage(id, menu2.menu2(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, menu2.menu2(id, ILHAM, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break
        case 'menu3':
-           client.sendMessage(id, menu3.menu3(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, menu3.menu3(id, ILHAM, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break
       case 'donate':
-           client.sendMessage(id, donate.donate(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, donate.donate(id, ILHAM, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break          
       case 'info':
-           client.sendMessage(id, info.info(id, A187, tanggal, waktu, whatsapp, youtube, instagram,aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, info.info(id, ILHAM, tanggal, waktu, whatsapp, youtube, instagram,aktif, nomer, ontime), MessageType.text)
            break             
        case 'nulis':
            nulis(value)
