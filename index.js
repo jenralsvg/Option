@@ -106,7 +106,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code by FADHIL & MYBOT, Scan kode qr mu cok!`)
+   console.log(`[ ${time} ] QR code by Mohamad Ilham, Scan kode qr mu cok!`)
 })
 
 client.on('credentials-updated', () => {
@@ -357,7 +357,7 @@ client.on('message-new', async (m) => {
            lirik(value)
                .then(data => {
                    const { hasil: lirik } = data
-                   let hasil = `📍lirik lagu📍 *${value}* \n\n\n${lirik}`
+                   let hasil = `lirik lagu *${value}* \n\n${lirik}`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
